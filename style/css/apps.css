@@ -1,0 +1,73 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+    font-size: 20px;
+}
+
+#apps {
+    flex-flow: row wrap;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.35);
+    transition: all .5s;
+    transform: translateY(150%);
+}
+
+.tile {
+	width: 25%;
+	margin: 20px 0;
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    transition: all .2s;
+    padding: 0;
+}
+.tile:active {
+    opacity: 0.4;
+}
+.tile img {
+    width: 55px;
+    max-width: 90px;
+    display: block;
+    margin: 0 auto 5px;
+    height: auto;
+}
+.tile span {
+    color: #fff;
+    display: block;
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    font-size: 0.9rem;
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-shadow: 0 2px rgba(0, 0, 0, 0.2), 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (min-resolution: 1.5dppx) {
+    .tile img {
+        width: 60px;
+    }
+}
+
+#clock {
+    animation: 20s ease-in-out 5s normal none infinite bouncing;
+}
+
+@keyframes bouncing {
+    0% {
+        transform: translateY(0);
+    }
+    80% {
+        transform: translateY(0);
+    }
+    90% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0)
+    }
+}

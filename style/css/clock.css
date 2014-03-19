@@ -1,0 +1,71 @@
+* { -moz-box-sizing: border-box; }
+
+/* Clock */
+
+#main {
+  background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.35));
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  transition: all .5s;
+  transform: translateZ(0);
+}
+
+#clock {
+  letter-spacing: -3px;
+  line-height: 0.8;
+  padding: 20% 5% 10%;
+  width: 100%;
+  color: white;
+  flex-direction: column;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  position: absolute;
+  transition: all .1s;
+  bottom: 0;
+}
+
+.arrow {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    font-weight: normal;
+    font-style: italic;
+}
+.arrow i {
+    font-size: 1.7rem;
+    opacity: 0.6;
+    vertical-align: top;
+    margin:0;
+}
+
+/*#clock:active {
+    transform: scale(0.7);
+}*/
+
+#time {
+  font-size: 150%;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.clock-hours {
+}
+.clock-minutes {
+}
+
+#date {
+  font-size: 200%;
+}
+
+@media screen and (min-resolution: 1.5dppx) {
+    #time {
+        font-size: 180%;
+    }
+    #date {
+        font-size: 250%;
+    }
+}

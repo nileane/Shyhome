@@ -1,0 +1,28 @@
+{
+  "name": "Shyhome",
+  "description": "Simple home screen launcher keeping your environnement simple but useful.",
+  "launch_path": "/index.html",
+  "orientation": "portrait-primary",
+  "type": "certified",
+  "role": "homescreen",
+  "developer": {
+    "name": "William Dorffer",
+    "url": "http://schoewilliam.fr"
+  },
+  "permissions": {
+    "webapps-manage": {},
+    "storage": {}
+  },
+  "locales": {
+    "fr-FR": {
+      "name": "Shy home",
+      "description": "Simple écran d'accueil vous garantissant un esprit sobre, simple, mais utile."
+    }
+  },
+  "default_locale": "en-US",
+  "icons": {
+    "60": "/style/icons/Blank.png"
+  },
+  "activities": {},
+  "messages": []
+}
